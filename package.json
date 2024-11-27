@@ -1,5 +1,5 @@
 {
-  "name": "madlib-backend",
+  "name": "mad-lib-lab",
   "version": "1.0.0",
   "description": "Mad Lib Backend hosted on Render",
   "main": "server.js",

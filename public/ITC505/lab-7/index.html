@@ -3,39 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mad Lib</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Mad Lib Adventure</title>
+    <link rel="stylesheet" href="style.css"> <!-- Ensure CSS file is linked correctly -->
 </head>
 <body>
     <header>
-        <h1>Create Your Mad Lib!</h1>
+        <h1>Create Your Mad Lib Adventure!</h1>
     </header>
     <main>
-        <form action="/ITC505/lab-7/index.html" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="adjective">Adjective:</label>
-            <input type="text" id="adjective" name="adjective" required>
-            
-            <label for="noun">Noun:</label>
-            <input type="text" id="noun" name="noun" required>
-            
-            <label for="verb">Verb:</label>
-            <input type="text" id="verb" name="verb" required>
-            
+        <form action="/ITC505/lab-7/submit" method="POST">
+            <label for="hero">Hero:</label>
+            <input type="text" id="hero" name="hero" required>
+
+            <label for="creature">Creature:</label>
+            <input type="text" id="creature" name="creature" required>
+
+            <label for="weapon">Weapon:</label>
+            <input type="text" id="weapon" name="weapon" required>
+
             <label for="place">Place:</label>
             <input type="text" id="place" name="place" required>
-            
-            <button type="submit">Submit Your Mad Lib</button>
+
+            <label for="action">Action:</label>
+            <input type="text" id="action" name="action" required>
+
+            <button type="submit">Submit Your Adventure</button>
         </form>
     </main>
     <footer>
         <p>Last updated: <span id="lastModified"></span></p>
     </footer>
     <script>
-        var x = document.lastModified;
-        document.getElementById('lastModified').textContent = x;
+        document.getElementById('lastModified').textContent = document.lastModified;
     </script>
 </body>
 </html>
